@@ -1,4 +1,3 @@
-window.addEventListener("deviceorientation", handleOrientation, false);
 
 let oriA; // -180 -> 180
 let oriB; // -180 -> 180
