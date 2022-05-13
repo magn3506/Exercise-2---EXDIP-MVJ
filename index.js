@@ -3,10 +3,11 @@ let oriA; // -180 -> 180
 let oriB; // -180 -> 180
 let oriG; // -90 -> 90
 
-let randomColor = Math.floor(Math.random()*16777215).toString(16);
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  background(255, 255, 255);
+
 }
 
 function draw() {
@@ -15,14 +16,13 @@ function draw() {
   let g = map(oriB, -180, 180, 0, 255);
   let b = map(oriG, -90, 90, 0, 255);
 
-  background(r, g, b);
 
   let xPos = map(oriG, -90, 90, 0, windowWidth)
   let yPoz = map(oriB, -180, 180, 0, windowHeight)
 
   noStroke()
-  fill("#" + randomColor)
-  circle(xPos, yPoz, 300);
+  fill(r,g,b)
+  circle(xPos, yPoz, 10);
 
 }
 

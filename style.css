@@ -10,19 +10,8 @@ h1 {
     left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
-    color: white;
+    color: black;
     text-align: center;
 }
 
 
-h3 {
-    position: fixed;
-    margin: 0 auto;
-    top: 60%;
-    left: 50%;
-    /* bring your own prefixes */
-    transform: translate(-50%, -50%);
-    color: lightgrey;
-    text-align: center;
-
-}
